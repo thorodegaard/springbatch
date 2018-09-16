@@ -1,15 +1,24 @@
 package com.thor.model;
 
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.Objects;
 
 @XmlRootElement(name = "record")
-public class ValueObject {
+public class ValueObject implements Serializable {
 
     private Long id;
     private String value;
+
+    public ValueObject() {
+
+    }
+
+    public ValueObject(Long id, String value) {
+        this.id = id;
+        this.value = value;
+    }
 
     @XmlElement(name = "id")
     public Long getId() {

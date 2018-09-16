@@ -14,6 +14,8 @@
         <spring.batch.version>3.0.7.RELEASE</spring.batch.version>
         <mysql.driver.version>5.1.25</mysql.driver.version>
         <junit.version>4.11</junit.version>
+        <opencsv.version>4.1</opencsv.version>
+        <sl4j.version>1.6.1</sl4j.version>
     </properties>
 
     <dependencies>
@@ -71,6 +73,32 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Open CSV -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>${opencsv.version}</version>
+        </dependency>
+
+        <!-- sl4j
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${sl4j.version}</version>
+        </dependency>
+        -->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.4</version>
         </dependency>
     </dependencies>
 
